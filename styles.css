@@ -1,0 +1,39 @@
+h1 {
+    color: rgb(215, 66, 146);
+}
+body {
+    color: rgb(208, 81, 160);
+    background-color: rgb(237, 156, 199);
+    max-width: 400px;
+    margin: 0 auto;
+}
+button {
+    color: palevioletred;
+    background-color: rgb(223, 34, 135);
+    border-radius: 100px;
+    border-color: rgb(223, 89, 188);
+}
+img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 60px;
+}
+nav {
+    background: rgb(223, 34, 135);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

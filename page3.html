@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my fist ever website!!!!</title>
+<link rel="stylesheet" href="styles.css">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="page2.html">Page 2</a>
+  <a href="page3.html">Page 3</a>
+    </nav>
+</head>
+<body>
+    <!-- three images side by side -->
+    
+    <div class="image-row">
+      <img src="IMG_1506.jpeg">
+      <img src="IMG_0461.jpeg">
+      <img src="IMG_4643.jpeg">
+    </div>
+
+    <button onclick="addOne()">🍪</button>
+<p id="count">0</p>
+<script>
+  let count = 0
+  function addOne() {
+    count = count + 1
+    document.getElementById('count').textContent = count
+    if (count == 9) {
+      alert("you clicked the button 9 times! bernie is proud of you!!")
+    }
+} 
+</script>
+
+    
+ </body>    
+</html>
