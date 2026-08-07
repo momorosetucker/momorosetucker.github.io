@@ -11,6 +11,26 @@
     </nav>
 </head>
 <body>
-    
+    <div id="target" onclick="caught()" style="position: absolute; font-size: 60px; cursor:pointer">🍓</div>
+    <p id="score">Score: 0</p>
+    <script>
+        let score = 0
+
+        function move() {
+            const t = document.getElementById('target')
+            const maxX = window.innerWidth - t.offsetWidth
+            const maxY = window.innerHeight - t.offsetHeight
+            t.style.left = Math.random() * maxX + 'px'
+            t.style.top = Math.random() * maxY + 'px'
+        }
+
+        function caught() {
+            score += 1
+            document.getElementById('score').textContent = 'Score: ' + score
+            move()
+        }
+
+        setInterval(move, 1500)
+    </script>
  </body>    
 </html>
